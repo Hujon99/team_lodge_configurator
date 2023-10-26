@@ -1,4 +1,4 @@
-# Team Lodge prudcut configurator
+# Team Lodge product configurator
 This is a develpment repo for a product cofigurator for Team Lodge, utilizing the Sketchfab API.
 
 ## Commit message convention
