@@ -1,0 +1,113 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+  font-family: Open Sans, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center; /* Vertically center */
+  width: 100%;
+  height: 100px;
+  background: #000000e3;
+  
+
+}
+
+.navigation {
+  margin-left: 65%;
+  margin-right: 0;
+  color: #333;
+}
+
+.menu-item{
+  font-family: "Verdana", "Helvetica Neue";
+  margin: 0%;
+  padding-bottom: 7% ;
+  padding-top: 3% ;
+  padding-left: 3% ;
+
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(29, 29, 29);
+}
+
+.header img {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  max-height: 100%; /* Make sure the image doesn't exceed its container */
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative; /* Set to relative to position the button absolutely inside it */
+}
+
+#toggleButton {
+  position: absolute; /* Position absolutely within the container */
+  top: 10px;          /* Distance from the top */
+  right: 10px;        /* Distance from the right */
+  z-index: 1000;      /* High z-index to ensure it's above the iframe */
+}
+
+
+
+.sketchfab {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  flex: 1;
+  transition: margin-left 0.3s;
+
+
+}
+
+
+
+.menu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0px; /* Initially hidden */
+  width: 350px;
+  height: 100%;
+  background: #ffffff;
+  transition: left 0.3s;
+}
+
+/* Style for showing the menu */
+.menu-overlay.show {
+  left: -350px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* Allow clicks to go through to the iframe */
+}
+
+.overlay-button {
+  margin: 5px;
+  padding: 10px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto; /* Enable interactions on the buttons */
+  border-radius: 10px; /* Adding rounded corners */
+
+}
