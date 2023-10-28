@@ -67,3 +67,29 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+.sketchfab {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  flex: 1;
+  transition: margin-left 0.3s;
+
+
+}
+
+.menu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0px; /* Initially hidden */
+  width: 350px;
+  height: 100%;
+  background: #ffffff;
+  transition: left 0.3s;
+}
+
+/* Style for showing the menu */
+.menu-overlay.show {
+  left: -350px;
+}

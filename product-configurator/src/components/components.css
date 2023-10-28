@@ -1,0 +1,33 @@
+.configuratorContainer {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow: hidden; /* Prevent any unwanted scrollbars */
+}
+
+.menuOverlay {
+    flex: 0 0 auto; /* This means the sidebar takes up only as much space as it needs */
+    width: 300px; /* Adjust this value based on how wide you want your sidebar to be */
+    background: #ccc; 
+    padding: 20px;
+}
+
+.sketchfabViewer {
+    flex: 1;  /*Allow it to grow and take up remaining space*/
+    background: #eee; 
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.headerMenu {
+    display: flex;
+    align-items: center; /* Vertically center */
+    width: 100%;
+    height: 100px;
+    background: #000000e3;
+  }
+
