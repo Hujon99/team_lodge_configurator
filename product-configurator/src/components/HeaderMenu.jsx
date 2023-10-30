@@ -1,16 +1,6 @@
 import React from 'react';
 
 function HeaderMenu() {
-//   const [menuToggle, setMenuToggle] = useState(false);
-
-  const toggleMenu = () => {
-    const menuOverlay = document.querySelector('.menu-overlay');
-    menuOverlay.classList.toggle('show');
-    setMenuToggle(!menuToggle);
-    console.log('Toggle:', menuToggle);
-
-}
-
 
   return (
     <div className="headerMenu">
