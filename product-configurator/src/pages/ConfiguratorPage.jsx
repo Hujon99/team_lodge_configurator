@@ -1,18 +1,16 @@
 import React from 'react';
-import ColorPicker from '../components/ColorPicker';
-import MaterialSelector from '../components/MaterialSelector';
-import AddOnToggle from '../components/AddOnToggle';
-import MenuOverlay from '../components/MenuOverlay';
+import SidebarMenu from '../components/SidebarMenu';
 import HeaderMenu from '../components/HeaderMenu';
 import SketchfabViewer from '../components/SketchfabViewer';
 import './../components/components.css'
+import './../components/sidebarMenu.css'
 
 function ConfiguratorPage() {
     return (
         <div>
             <HeaderMenu />
             <div className='configuratorContainer'>
-                <MenuOverlay />
+                <SidebarMenu />
                 <SketchfabViewer />
             </div>
         </div>

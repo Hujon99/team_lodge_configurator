@@ -5,13 +5,7 @@
     overflow: hidden; /* Prevent any unwanted scrollbars */
 }
 
-.menuOverlay {
-    flex: 0 0 auto; /* This means the sidebar takes up only as much space as it needs */
-    width: 300px; /* Adjust this value based on how wide you want your sidebar to be */
-    background: #ccc; 
-    padding: 20px;
-}
-
+  
 .sketchfabViewer {
     flex: 1;  /*Allow it to grow and take up remaining space*/
     background: #eee; 

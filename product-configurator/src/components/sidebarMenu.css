@@ -1,0 +1,44 @@
+.sidebarMenu {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  height: calc(100vh - 100px);;
+  width: 350px; /* or your desired width */
+  background-color: #F3F4F6; /* a light gray background color */
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* a subtle shadow for depth */
+}
+
+.sidebarMenu.closed {
+  transform: translateX(-100%);
+}
+
+button.toggleButton {
+  position: absolute;
+  top: 50%; /* move it to the middle vertically */
+  right: -40px; /* adjust to move the button outside the sidebar */
+  background-color: #F3F4F6; /* a light gray background color */
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  padding: 5px 10px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-50%); /* center it vertically */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* a subtle shadow for depth */
+}
+
+.toggleButton i {
+  font-size: 24px;
+  color: #333;
+}
+
+
+
+
+.menu-item {
+  transition: background-color 0.2s ease-in-out;
+}
+
+  
